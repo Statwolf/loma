@@ -1,6 +1,6 @@
-## LoMA-OpenWebUI
+## LoMA
 
-**LoMA-OpenWebUI** is a production-ready local AI ecosystem. It integrates [Open WebUI](https://github.com/open-webui/open-webui) with a custom **LoMA-Agent** via a dynamic pipeline system, providing an interface for local LLMs, agents, and session logging.
+**LoMA** is a production-ready local AI ecosystem. It integrates [Open WebUI](https://github.com/open-webui/open-webui) with a custom **LoMA-Agent** via a dynamic pipeline system, providing an interface for local LLMs, agents, and session logging.
 
 ## Structure
 
@@ -111,3 +111,4 @@ The `.env` file should contain at least the following environment variables:
 
 - **Dynamic Pipelines**: Any new script added to `pipelines/pipelines_custom/` will be automatically loaded when the container starts.
 - **Persistence**: Database logs are stored in the `postgres-loma` docker volume, ensuring history is kept across restarts.
+- **Fine-tuning**: it possible to test fine-tuning using the code available on [loma-fine-tuning](https://github.com/Statwolf/loma-fine-tuning)
